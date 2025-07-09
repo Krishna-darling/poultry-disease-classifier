@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PoultryDetect - Poultry Health Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            font-size: 24px;
+        }
+        h1 {
+            margin-top: 30px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .images {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .images img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    PoultryDetect
+</header>
+
+<h1>Welcome to Poultry Health Hub,<br>
+Your comprehensive resource for <br>
+<strong>poultry disease management and prevention.</strong></h1>
+
+<a href="/upload">
+    <button>GET STARTED</button>
+</a>
+
+<div class="images">
+    <img src="{{ url_for('static', filename='coccidiosis.jpg') }}" alt="Coccidiosis">
+    <img src="{{ url_for('static', filename='sick_chicken.jpg') }}" alt="Sick Chicken">
+    <img src="{{ url_for('static', filename='healthy_chicken.jpg') }}" alt="Healthy Chicken">
+    <img src="{{ url_for('static', filename='farm.jpg') }}" alt="Farm">
+</div>
+
+</body>
+</html>
